@@ -6,7 +6,6 @@ use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 use Victoire\Widget\ImageBundle\Form\WidgetImageType;
 
-
 /**
  * WidgetCover form type
  */
@@ -20,9 +19,11 @@ class WidgetCoverType extends WidgetImageType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
                 parent::buildForm($builder, $options);
+                $builder->add('opacity', null, array(
+                    'label' => 'widget_cover.form.opacity.label'
+                ));
 
     }
-
 
     /**
      * bind form to WidgetCover entity

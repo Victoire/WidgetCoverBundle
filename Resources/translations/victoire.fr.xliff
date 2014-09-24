@@ -14,6 +14,10 @@
         <source>modal.form.widget.type.cover.label</source>
         <target>Cover</target>
       </trans-unit>
+      <trans-unit resname="widget_cover.form.opacity.label">
+        <source>widget_cover.form.opacity.label</source>
+        <target>Opacité</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
