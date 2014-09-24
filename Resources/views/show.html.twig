@@ -1,0 +1,31 @@
+{% extends 'VictoireWidgetImageBundle::show.html.twig' %}
+
+{% trans_default_domain "victoire" %}
+
+{% block content %}
+    {% if image.url == null %}
+        {% set coverImageUrl = 'no-image-found' %}
+    {% else %}
+        {% set coverImageUrl = image.url %}
+    {% endif %}
+
+    <section id="home-top" style="background-image:url({{ coverImageUrl }})">
+        <div class="container">
+            <div class="row">
+                <div id="home-top-panel-container" class="col-md-6 col-md-offset-6 col-sm-8 col-sm-offset-4 col-xs-12">
+                    <div class="panel panel-default-transparent">
+                        <div class="panel-body">
+                            {{ cms_slot_widgets('home_top_panel_top') }}
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default-transparent" id="home_top_panel_bottom_container">
+                        <div class="panel-body">
+                            {{ cms_slot_widgets('home_top_panel_bottom') }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock content %}

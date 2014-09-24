@@ -1,0 +1,14 @@
+services:
+    victoire_core.widget_cover_content_resolver:
+        class: Victoire\Bundle\WidgetBundle\Resolver\BaseWidgetContentResolver
+        tags:
+            - { name: victoire_widget.widget_content_resolver, alias: Cover }
+    #alias to the entity
+    victoire.widget.cover:
+        class: Victoire\Widget\CoverBundle\Entity\WidgetCover
+
+    #alias to the form
+    victoire.widget.form.cover:
+        class: Victoire\Widget\CoverBundle\Form\WidgetCoverType
+        tags:
+            - { name: form.type , alias: victoire_widget_form_cover }

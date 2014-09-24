@@ -1,0 +1,11 @@
+victoire_core:
+    widgets:
+        Cover:
+            class: "Victoire\\Widget\\CoverBundle\\Entity\\WidgetCover"
+            name: Cover
+            parent: Image
+jms_translation:
+    configs:
+        victoire_cover_bundle:
+            dirs: ["@VictoireCoverBundle"]
+            output_dir: "@VictoireCoverBundle/Resources/translations"
