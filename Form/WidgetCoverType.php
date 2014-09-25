@@ -20,7 +20,8 @@ class WidgetCoverType extends WidgetImageType
     {
                 parent::buildForm($builder, $options);
                 $builder->add('opacity', null, array(
-                    'label' => 'widget_cover.form.opacity.label'
+                    'label' => 'widget_cover.form.opacity.label',
+                    'vic_help_block' => 'widget_cover.form.opacity.help_block'
                 ));
 
     }

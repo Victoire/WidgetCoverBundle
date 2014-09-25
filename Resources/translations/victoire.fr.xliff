@@ -18,6 +18,10 @@
         <source>widget_cover.form.opacity.label</source>
         <target>Opacité</target>
       </trans-unit>
+      <trans-unit resname="widget_cover.form.opacity.help_block">
+        <source>widget_cover.form.opacity.help_block</source>
+        <target>Pour une opacité à 50%, saisir: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

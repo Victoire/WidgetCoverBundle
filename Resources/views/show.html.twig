@@ -8,7 +8,7 @@
     {% else %}
         {% set coverImageUrl = image.url %}
     {% endif %}
-    <section id="home-top" style="{% if opacity %}{{opacity}}, {% endif %}background-image:url({{ coverImageUrl }})">
+    <section id="home-top" style="background-image:{% if opacity %} {{opacity}},{% endif %} url({{ coverImageUrl }})">
         <div class="container">
             <div class="row">
                 <div id="home-top-panel-container" class="col-md-6 col-md-offset-6 col-sm-8 col-sm-offset-4 col-xs-12">
