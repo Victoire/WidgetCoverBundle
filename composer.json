@@ -1,5 +1,5 @@
 {
-    "name": "victoire/cover-bundle",
+    "name": "victoire/cover-widget",
     "type": "symfony-bundle",
     "description": "Victoire Cms Cover widget",
     "keywords": ["cms", "victoire", "Cover", "widget"],
@@ -7,8 +7,8 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Your name",
-            "email": "you@company.com"
+            "name": "Paul Andrieux",
+            "email": "paul@appventus.com"
         }
     ],
     "require": {
