@@ -1,6 +1,6 @@
 services:
     victoire_core.widget_cover_content_resolver:
-        class: Victoire\Bundle\WidgetBundle\Resolver\BaseWidgetContentResolver
+        parent: victoire_widget.base_widget_content_resolver
         tags:
             - { name: victoire_widget.widget_content_resolver, alias: Cover }
     #alias to the entity
