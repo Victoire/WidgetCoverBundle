@@ -4,12 +4,12 @@
 
 {% block content %}
     {% if image.url is defined %}
-        {% set style = "background-image: " ~ (opacity ? opacity) ~ " url(" ~ image.url ~ ")" %}
+        {% set background = "background-image: " ~ (opacity ? opacity) ~ " url(" ~ image.url ~ ");" %}
     {% else %}
-        {% set style = "background-color: #cccccc" %}
+        {% set background = "background-color: #cccccc;" %}
     {% endif %}
 
-    <div class="cover" style="{{ style }}">
+    <div class="cover" style="{{ background }}{% if height %}height: {{ height }};{% endif %}">
         {{ cms_slot_widgets('cover' ~ widget.id) }}
     </div>
 {% endblock content %}
