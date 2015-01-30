@@ -4,7 +4,7 @@
 
 {% block content %}
     {% if image.url is defined %}
-        {% set background = "background-image: " ~ (opacity ? opacity) ~ " url(" ~ image.url ~ ");" %}
+        {% set background = "background-image: " ~ (opacity ? opacity) ~ ", url(" ~ image.url ~ ");" %}
     {% else %}
         {% set background = "background-color: #cccccc;" %}
     {% endif %}
