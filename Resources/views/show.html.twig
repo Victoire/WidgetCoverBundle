@@ -3,7 +3,7 @@
 {% trans_default_domain "victoire" %}
 
 {% block content %}
-    {% if image.url is defined and opacity is defined %}
+    {% if image.url is defined and opacity is not null %}
         {% set background = "background-image: " ~ opacity ~ ", url(" ~ image.url ~ ");" %}
     {% elseif image.url is defined %}
         {% set background = "background-image: url(" ~ image.url ~ ");" %}
