@@ -1,5 +1,5 @@
 {
-    "name": "appventus/cover-widget",
+    "name": "friendsofvictoire/cover-widget",
     "type": "symfony-bundle",
     "description": "Victoire Cms Cover widget",
     "keywords": ["cms", "victoire", "Cover", "widget"],
@@ -15,7 +15,7 @@
         "php"                      : ">=5.3.3",
         "symfony/framework-bundle" : "~2.3",
         "victoire/victoire"        : "dev-master",
-        "appventus/image-widget"   : "dev-master"
+        "friendsofvictoire/image-widget"   : "dev-master"
     },
     "autoload": {
         "psr-0": { "Victoire\\Widget\\CoverBundle": "" }
