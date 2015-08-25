@@ -17,6 +17,9 @@
         "victoire/victoire": "dev-master",
         "friendsofvictoire/image-widget": "dev-master"
     },
+    "suggest": {
+        "friendsofvictoire/image-widget": "dev-master"
+    },
     "autoload": {
         "psr-0": { "Victoire\\Widget\\CoverBundle": "" }
     },
