@@ -7,42 +7,44 @@ use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 use Victoire\Widget\ImageBundle\Form\WidgetImageType;
 
 /**
- * WidgetCover form type
+ * WidgetCover form type.
  */
 class WidgetCoverType extends WidgetImageType
 {
     /**
-     * define form fields
+     * define form fields.
+     *
      * @param FormBuilderInterface $builder
+     *
      * @param array $options
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-                parent::buildForm($builder, $options);
-                $builder->add('opacity', null, array(
-                    'label' => 'widget_cover.form.opacity.label',
-                    'vic_help_block' => 'widget_cover.form.opacity.help_block'
-                ));
-
+        parent::buildForm($builder, $options);
+        $builder->add('opacity', null, [
+                    'label'          => 'widget_cover.form.opacity.label',
+                    'vic_help_block' => 'widget_cover.form.opacity.help_block',
+                ]);
     }
 
     /**
-     * bind form to WidgetCover entity
+     * bind form to WidgetCover entity.
+     *
      * @param OptionsResolverInterface $resolver
      */
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
         parent::setDefaultOptions($resolver);
 
-        $resolver->setDefaults(array(
+        $resolver->setDefaults([
             'data_class'         => 'Victoire\Widget\CoverBundle\Entity\WidgetCover',
             'widget'             => 'Cover',
-            'translation_domain' => 'victoire'
-        ));
+            'translation_domain' => 'victoire',
+        ]);
     }
 
     /**
-     * get form name
+     * get form name.
      *
      * @return string The form name
      */

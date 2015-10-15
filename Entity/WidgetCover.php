@@ -1,20 +1,20 @@
 <?php
+
 namespace Victoire\Widget\CoverBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Victoire\Widget\ImageBundle\Entity\WidgetImage;
 
 /**
- * WidgetCover
+ * WidgetCover.
  *
  * @ORM\Table("vic_widget_cover")
  * @ORM\Entity
  */
 class WidgetCover extends WidgetImage
 {
-
     /**
-     * @var integer
+     * @var int
      *
      * @ORM\Column(name="opacity", type="string", length=255, nullable=true)
      */
@@ -23,9 +23,9 @@ class WidgetCover extends WidgetImage
     /**
      * To String function
      * Used in render choices type (Especially in VictoireWidgetRenderBundle)
-     * //TODO Check the generated value and make it more consistent
+     * //TODO Check the generated value and make it more consistent.
      *
-     * @return String
+     * @return string
      */
     public function __toString()
     {
@@ -33,7 +33,7 @@ class WidgetCover extends WidgetImage
     }
 
     /**
-     * Get opacity
+     * Get opacity.
      *
      * @return string
      */
@@ -43,7 +43,7 @@ class WidgetCover extends WidgetImage
     }
 
     /**
-     * Set opacity
+     * Set opacity.
      *
      * @param string $opacity
      *
@@ -55,5 +55,4 @@ class WidgetCover extends WidgetImage
 
         return $this;
     }
-
 }
