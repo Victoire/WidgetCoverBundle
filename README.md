@@ -1,13 +1,25 @@
-Victoire CMS Cover Bundle
-============
+*deprecated* -- now that Victoire's default style mode enables the cover
+===========
 
-Need to add a cover in a victoire cms website ?
-Get this cover bundle and so on
+Victoire DCMS Cover Bundle
+--------
 
-First you need to have a valid Symfony2 Victoire edition.
-Then you just have to run the following composer command :
+##What is the purpose of this bundle
 
-    php composer.phar require victoire/cover-widget
+This bundle gives you access to the *Cover Widget*.
+With this widget, you can install a cover picture on any page.
+
+##Set Up Victoire
+
+If you haven't already, you can follow the steps to set up Victoire *[here](https://github.com/Victoire/victoire/blob/master/setup.md)*
+
+##Install the Bundle
+
+Run the following composer command :
+
+    php composer.phar require friendsofvictoire/cover-widget
+
+###Reminder
 
 Do not forget to add the bundle in your AppKernel !
 
