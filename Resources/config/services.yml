@@ -3,12 +3,9 @@ services:
         parent: victoire_widget.base_widget_content_resolver
         tags:
             - { name: victoire_widget.widget_content_resolver, alias: Cover }
-    #alias to the entity
-    victoire.widget.cover:
-        class: Victoire\Widget\CoverBundle\Entity\WidgetCover
 
     #alias to the form
     victoire.widget.form.cover:
         class: Victoire\Widget\CoverBundle\Form\WidgetCoverType
         tags:
-            - { name: form.type , alias: victoire_widget_form_cover }
+            - { name: form.type }

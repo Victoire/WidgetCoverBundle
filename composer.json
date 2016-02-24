@@ -1,42 +1,40 @@
 {
-    "name"             : "friendsofvictoire/cover-widget",
-    "type"             : "symfony-bundle",
-    "description"      : "Victoire DCMS Cover widget",
-    "keywords"         : [
+    "name": "friendsofvictoire/cover-widget",
+    "type": "symfony-bundle",
+    "description": "Victoire DCMS Cover widget",
+    "keywords": [
         "DCMS",
         "Victoire",
         "widget",
         "FriendsofVictoire",
         "Cover"
     ],
-    "homepage"         : "http://victoire.io",
-    "license"          : "MIT",
-    "authors"          : [
+    "homepage": "http://victoire.io",
+    "license": "MIT",
+    "authors": [
         {
             "name" : "Leny Bernard",
             "email": "leny@victoire.io"
         },
         {
-            "name" : "Paul Andrieux",
+            "name": "Paul Andrieux",
             "email": "paul@victoire.io"
         }
     ],
-    "require"          : {
-        "php"                           : ">=5.3.3",
-        "symfony/framework-bundle"      : ">=2.3",
-        "victoire/victoire"             : "~1.3",
-        "friendsofvictoire/image-widget": "1.3.x-dev"
+    "require": {
+        "victoire/victoire": "~1.5",
+        "friendsofvictoire/image-widget": "~1.5"
     },
-    "autoload"         : {
+    "autoload": {
         "psr-0": {
             "Victoire\\Widget\\CoverBundle": ""
         }
     },
     "minimum-stability": "dev",
-    "target-dir"       : "Victoire/Widget/CoverBundle",
-    "extra"            : {
+    "target-dir": "Victoire/Widget/CoverBundle",
+    "extra": {
         "branch-alias": {
-            "dev-master": "1.3.x-dev"
+            "dev-master": "1.5.x-dev"
         }
     }
 }
