@@ -3,6 +3,7 @@
 namespace Victoire\Widget\CoverBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Victoire\Bundle\WidgetBundle\Entity\WidgetSlotInterface;
 use Victoire\Widget\ImageBundle\Entity\WidgetImage;
 
 /**
@@ -11,7 +12,7 @@ use Victoire\Widget\ImageBundle\Entity\WidgetImage;
  * @ORM\Table("vic_widget_cover")
  * @ORM\Entity
  */
-class WidgetCover extends WidgetImage
+class WidgetCover extends WidgetImage implements WidgetSlotInterface
 {
     /**
      * @var int
