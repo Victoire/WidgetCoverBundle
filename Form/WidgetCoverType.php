@@ -12,6 +12,7 @@ class WidgetCoverType extends WidgetImageType
      * define form fields.
      *
      * @param FormBuilderInterface $builder
+     *
      * @param array $options
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
@@ -24,8 +25,8 @@ class WidgetCoverType extends WidgetImageType
     }
 
     /**
-    * {@inheritdoc}
-    */
+     * {@inheritdoc}
+     */
     public function configureOptions(OptionsResolver $resolver)
     {
         parent::configureOptions($resolver);
