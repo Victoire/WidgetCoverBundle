@@ -30,11 +30,5 @@
             "Victoire\\Widget\\CoverBundle": ""
         }
     },
-    "minimum-stability": "dev",
-    "target-dir": "Victoire/Widget/CoverBundle",
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.5.x-dev"
-        }
-    }
+    "target-dir": "Victoire/Widget/CoverBundle"
 }
