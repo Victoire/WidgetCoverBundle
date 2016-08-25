@@ -22,8 +22,8 @@
         }
     ],
     "require": {
-        "victoire/victoire": "~2",
-        "friendsofvictoire/image-widget": "~2"
+        "victoire/victoire": ">=2.0.0",
+        "friendsofvictoire/image-widget": ">=2.0.0"
     },
     "autoload": {
         "psr-0": {
