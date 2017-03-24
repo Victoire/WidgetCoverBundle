@@ -1,6 +1,3 @@
-*deprecated* -- now that Victoire's default style mode enables the cover
-===========
-
 Victoire DCMS Cover Bundle
 --------
 
