@@ -6,19 +6,19 @@
       <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
     </header>
     <body>
-      <trans-unit resname="widget.cover.new.action.label">
+      <trans-unit resname="widget.cover.new.action.label" id="58e25b09ce4b5">
         <source>widget.cover.new.action.label</source>
         <target>Cover</target>
       </trans-unit>
-      <trans-unit resname="modal.form.widget.type.cover.label">
+      <trans-unit resname="modal.form.widget.type.cover.label" id="58e25b09ce4c6">
         <source>modal.form.widget.type.cover.label</source>
         <target>Cover</target>
       </trans-unit>
-      <trans-unit resname="widget_cover.form.opacity.label">
+      <trans-unit resname="widget_cover.form.opacity.label" id="58e25b09ce4d4">
         <source>widget_cover.form.opacity.label</source>
         <target>Opacité</target>
       </trans-unit>
-      <trans-unit resname="widget_cover.form.opacity.help_block">
+      <trans-unit resname="widget_cover.form.opacity.help_block" id="58e25b09ce4e3">
         <source>widget_cover.form.opacity.help_block</source>
         <target>Pour une opacité à 50%, saisir: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))</target>
       </trans-unit>
