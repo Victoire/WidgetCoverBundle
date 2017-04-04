@@ -1,13 +1,11 @@
 {
     "name": "victoire/cover-widget",
     "type": "symfony-bundle",
-    "description": "Victoire DCMS Cover widget",
+    "description": "Victoire Cover widget",
     "keywords": [
-        "DCMS",
         "Victoire",
-        "widget",
-        "FriendsofVictoire",
-        "Cover"
+        "Cover",
+        "Widget"
     ],
     "homepage": "http://victoire.io",
     "license": "MIT",
@@ -22,8 +20,8 @@
         }
     ],
     "require": {
-        "victoire/victoire": ">=2.0.0 | ~3.0",
-        "victoire/image-widget": ">=2.0.0"
+        "victoire/victoire": "~2.3 | ~3.0",
+        "victoire/image-widget": "~2.0"
     },
     "autoload": {
         "psr-0": {

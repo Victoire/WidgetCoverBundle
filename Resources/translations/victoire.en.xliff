@@ -6,11 +6,11 @@
       <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
     </header>
     <body>
-      <trans-unit resname="widget.cover.new.action.label">
+      <trans-unit resname="widget.cover.new.action.label" id="58e25b09ce1e2">
         <source>widget.cover.new.action.label</source>
         <target>Cover</target>
       </trans-unit>
-      <trans-unit resname="modal.form.widget.type.cover.label">
+      <trans-unit resname="modal.form.widget.type.cover.label" id="58e25b09ce1fe">
         <source>modal.form.widget.type.cover.label</source>
         <target>Cover</target>
       </trans-unit>
