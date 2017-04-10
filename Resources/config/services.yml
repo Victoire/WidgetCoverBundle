@@ -13,3 +13,12 @@ services:
         class: Victoire\Widget\CoverBundle\Form\WidgetCoverType
         tags:
             - { name: form.type }
+
+    #subscriber
+    victoire.widget.cover.create.subscriber:
+        class: Victoire\Widget\CoverBundle\EventSubscriber\CreateSubscriber
+        arguments:
+            - "@doctrine.orm.entity_manager"
+            - "%victoire_widget_cover.default_styles%"
+        tags:
+            - { name: kernel.event_subscriber }

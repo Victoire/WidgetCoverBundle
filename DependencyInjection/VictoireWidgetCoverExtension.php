@@ -24,5 +24,8 @@ class VictoireWidgetCoverExtension extends Extension
 
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yml');
+
+        $container->setParameter('victoire_widget_cover.default_styles', $config['default_styles']);
+
     }
 }

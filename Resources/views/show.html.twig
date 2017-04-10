@@ -15,7 +15,7 @@
         {% set background = "background-color: #cccccc;" %}
     {% endif %}
 
-    <div class="cover" style="{{ background }}{% if height %}min-height: {{ height }};{% endif %}">
+    <div class="cover" style="{{ background }} background-position: center;background-size: cover;min-height: inherit;">
         {{ cms_slot_widgets('cover' ~ widget.id) }}
     </div>
 {% endblock content %}
