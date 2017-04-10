@@ -19,10 +19,18 @@ class Configuration implements ConfigurationInterface
     {
         $treeBuilder = new TreeBuilder();
         $rootNode = $treeBuilder->root('victoire_widget_cover');
-
-        // Here you should define the parameters that are allowed to
-        // configure your bundle. See the documentation linked above for
-        // more information on that topic.
+        $rootNode
+            ->children()
+                ->arrayNode('default_styles')
+                    ->addDefaultsIfNotSet()
+                    ->children()
+                        ->scalarNode('containerHeightLG')->defaultValue('400px')->end()
+                        ->scalarNode('containerHeightMD')->defaultValue('350px')->end()
+                        ->scalarNode('containerHeightSM')->defaultValue('250px')->end()
+                        ->scalarNode('containerHeightXS')->defaultValue('150px')->end()
+                    ->end()
+                ->end()
+            ->end();
 
         return $treeBuilder;
     }
